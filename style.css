@@ -1,0 +1,470 @@
+header nav .container-fluid .navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+}
+header nav .container-fluid .navbar-nav :hover {
+  color: rgb(246, 112, 10);
+}
+header nav .container-fluid .navbar-nav :active {
+  color: rgb(246, 112, 10);
+}
+
+section#Home {
+  height: 80vh;
+  background-image: url(images/banner-bg.png);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+section#Home .mySwiper {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+section#Home .mySwiper .swiper-slide {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+section#Home .mySwiper .swiper-slide h2 {
+  font-size: 50px;
+}
+section#Home .mySwiper .swiper-slide h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+}
+section#Home .mySwiper .swiper-slide p {
+  color: white;
+  width: 43%;
+}
+section#Home .mySwiper .swiper-slide button {
+  width: 10rem;
+  padding: 10px 20px;
+  color: white;
+}
+section#Home .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#Home .mySwiper .swiper-button-next:after {
+  content: "";
+}
+section#Home .mySwiper .swiper-button-prev:after {
+  content: " ";
+}
+section#Home .mySwiper .swiper-button-next {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  right: 45%;
+  transform: translateX(-45%);
+  top: 94%;
+  transition: 0.3s;
+}
+section#Home .mySwiper .swiper-button-next:hover {
+  background-color: rgb(246, 112, 10);
+}
+section#Home .mySwiper .swiper-button-prev {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 45%;
+  transform: translateX(-45%);
+  top: 94%;
+  transition: 0.3s;
+}
+section#Home .mySwiper .swiper-button-prev:hover {
+  background-color: rgb(246, 112, 10);
+}
+
+section#About {
+  padding: 80px 0;
+}
+section#About .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+}
+section#About .about-content h3 {
+  font: 800 40px sans-serif;
+  text-transform: uppercase;
+  color: rgb(246, 112, 10);
+}
+section#About .about-content p {
+  font: 500 18px sans-serif;
+  line-height: 25px;
+  width: 90%;
+}
+section#About .about-content .btn {
+  width: 10rem;
+  transition: 0.3s;
+  border: none;
+}
+section#About .about-content .btn:hover {
+  background-color: rgb(246, 112, 10);
+}
+section#About .about-image {
+  height: 500px;
+  padding: 0;
+}
+section#About .about-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#Gallery {
+  text-align: center;
+  padding-bottom: 80px;
+}
+section#Gallery h3 {
+  font: 800 40px sans-serif;
+  text-transform: uppercase;
+  color: rgb(246, 112, 10);
+}
+section#Gallery p {
+  font: 500 18px sans-serif;
+  line-height: 25px;
+  width: 90%;
+}
+section#Gallery .image {
+  position: relative;
+  overflow: hidden;
+  padding: 7px;
+}
+section#Gallery .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+section#Gallery .image .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  transform: scale(0);
+  transition: 0.3s;
+}
+section#Gallery .image .icon i {
+  font-size: 70px;
+}
+section#Gallery .image:hover .icon {
+  transform: scale(1);
+}
+section#Gallery .image:hover img {
+  transform: scale(1.2);
+}
+section#Gallery .btn {
+  margin-top: 25px;
+  transition: 0.3s;
+  border: none;
+}
+section#Gallery .btn:hover {
+  background-color: rgb(246, 112, 10);
+}
+
+section#Services {
+  background-image: url(images/services-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+section#Services .service-title {
+  font: 800 40px sans-serif;
+  text-transform: uppercase;
+  color: rgb(246, 112, 10);
+}
+section#Services .title-text {
+  font: 500 18px sans-serif;
+  line-height: 25px;
+  width: 90%;
+  color: white;
+}
+section#Services .service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 10rem;
+  margin: 15px 0 80px 0;
+}
+section#Services .service-cards .service-card {
+  background-color: rgb(246, 112, 10);
+  padding: 50px 25px;
+  color: white;
+  height: 270px;
+  transition: 0.3s;
+}
+section#Services .service-cards .service-card:hover {
+  height: 400px;
+  background-color: white;
+  color: black;
+}
+section#Services .service-cards .service-card:hover .btn {
+  display: block;
+}
+section#Services .service-cards .service-card h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin: 20px 0;
+}
+section#Services .service-cards .service-card img {
+  width: 70px;
+  height: 70px;
+}
+section#Services .service-cards .service-card p {
+  font: 500 17px sans-serif;
+  margin-bottom: 60px;
+}
+section#Services .service-cards .service-card .btn {
+  padding: 12px 30px;
+  font: 500 20px sans-serif;
+  display: none;
+  transition: 0.3s;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+section#Testimonial {
+  padding: 80px 150px;
+}
+section#Testimonial .testimonial-title {
+  font: 800 40px sans-serif;
+  text-transform: uppercase;
+  color: rgb(246, 112, 10);
+}
+section#Testimonial .testimonial-p {
+  font: 500 18px sans-serif;
+  line-height: 25px;
+  width: 90%;
+}
+section#Testimonial .mySwiper2 {
+  width: 100%;
+  height: 100%;
+}
+section#Testimonial .mySwiper2 .swiper-slide {
+  font-size: 18px;
+  margin: 40px 0 70px 0;
+  position: relative;
+  padding: 15px;
+}
+section#Testimonial .mySwiper2 .swiper-slide .title-carausel {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: 160px;
+}
+section#Testimonial .mySwiper2 .swiper-slide .title-carausel h3 {
+  font-weight: 700;
+  margin-right: 40px;
+}
+section#Testimonial .mySwiper2 .swiper-slide .square {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  top: 30px;
+  left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+section#Testimonial .mySwiper2 .swiper-slide .square2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  right: 0;
+  top: 30px;
+  border-left: 0;
+  border-top: 0;
+}
+section#Testimonial .mySwiper2 .swiper-pagination .swiper-pagination-bullet {
+  width: 70px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: black;
+}
+section#Testimonial .mySwiper2 .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(246, 112, 10);
+}
+section#Testimonial .mySwiper2 .swiper-slide img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1400px) {
+  section#Home .mySwiper .swiper-button-next {
+    right: 43%;
+    transform: translateX(-43%);
+  }
+  section#Home .mySwiper .swiper-button-prev {
+    left: 43%;
+    transform: translateX(-43%);
+  }
+}
+@media (max-width: 1200px) {
+  section#Home .mySwiper {
+    width: 80%;
+    height: 80%;
+    position: relative;
+  }
+  section#Home .mySwiper .swiper-button-next {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    right: 40%;
+    transform: translateX(-40%);
+    top: 94%;
+    transition: 0.3s;
+  }
+  section#Home .mySwiper .swiper-button-prev {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    top: 94%;
+    transition: 0.3s;
+  }
+  section#Services .service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#Services .service-cards .service-card {
+    width: 300px;
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  section#Home .mySwiper {
+    width: 80%;
+    height: 80%;
+    position: relative;
+  }
+  section#Home .mySwiper .swiper-button-next {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    right: 40%;
+    transform: translateX(-40%);
+    top: 94%;
+    transition: 0.3s;
+  }
+  section#Home .mySwiper .swiper-button-prev {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    top: 94%;
+    transition: 0.3s;
+  }
+  section#Services .service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#Services .service-cards .service-card {
+    width: 300px;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  section#Home .mySwiper {
+    width: 90%;
+    height: 90%;
+    position: relative;
+  }
+  section#Home .mySwiper .swiper-slide p {
+    width: 73%;
+  }
+  section#Services .service-cards {
+    display: block;
+  }
+  section#Services .service-cards .service-card {
+    margin-bottom: 40px;
+    display: block;
+    width: 400px;
+  }
+}
+@media (max-width: 576px) {
+  section#Home .mySwiper {
+    width: 90%;
+    height: 90%;
+  }
+  section#Home .mySwiper .swiper-slide h2 {
+    font-size: 50px;
+  }
+  section#Home .mySwiper .swiper-slide h1 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  section#Home .mySwiper .swiper-slide p {
+    color: white;
+    width: 93%;
+  }
+  section#Home .mySwiper .swiper-slide button {
+    width: 10rem;
+    padding: 10px 20px;
+  }
+  section#Home .mySwiper .swiper-button-next {
+    right: 30%;
+    transform: translateX(-30%);
+  }
+  section#Home .mySwiper .swiper-button-prev {
+    left: 30%;
+    transform: translateX(-30%);
+  }
+  section#Services .service-cards {
+    display: block;
+  }
+  section#Services .service-cards .service-card {
+    margin-bottom: 40px;
+    display: block;
+    width: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
